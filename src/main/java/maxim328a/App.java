@@ -15,7 +15,6 @@ public class App {
         int gamesPlayed;
         float timeEveryDay;
 
-
         Hobby[] arr = {new Football(),new Football(),new Serials(),new Serials()};
 
         System.out.print("Input name of your team: ");
