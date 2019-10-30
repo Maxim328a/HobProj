@@ -1,15 +1,19 @@
+/**Maxim Sitalo*/
 package maxim328a;
 
-public class Football extends Hobby {
+public class Football extends AbstractHobby {
 
+    /**Maxim Sitalo*/
     private int totalGoalsScored;
+
+    /**Maxim Sitalo*/
     private int gamesPlayed;
 
     public int getTotalGoalsScored() {
         return totalGoalsScored;
     }
 
-    public void setTotalGoalsScored(int totalGoalsScored) {
+    public void setTotalGoalsScored(final int totalGoalsScored) {
         this.totalGoalsScored = totalGoalsScored;
     }
 
@@ -17,18 +21,22 @@ public class Football extends Hobby {
         return gamesPlayed;
     }
 
-    public void setGamesPlayed(int gamesPlayed) {
+    public void setGamesPlayed(final int gamesPlayed) {
         this.gamesPlayed = gamesPlayed;
     }
 
-    public Football(String name, int age, char interestScale, int totalGoalsScored, int gamesPlayed) {
+    /**Maxim Sitalo*/
+    public Football(final String name, final int age, final char interestScale, final int totalGoalsScored, final int gamesPlayed) {
         super(name, age, interestScale);
         this.totalGoalsScored = totalGoalsScored;
         this.gamesPlayed = gamesPlayed;
     }
 
+    /**Maxim Sitalo*/
     public Football() {
+        super();
     }
+
 
     @Override
     public void tellAboutHobby() {

@@ -1,52 +1,55 @@
 package maxim328a;
 import java.util.Scanner;
 
-public class App {
-    public static void main (String[] args ){
+public class AppTest {
+    public static void main (final String[] args ){
 
-        Scanner in = new Scanner(System.in);
+        final Scanner scanner = new Scanner(System.in);
 
         String name;
         String lastSerial;
-        String favSerial;
         int age;
         char interestScale;
         int goalsScored;
         int gamesPlayed;
         float timeEveryDay;
 
-        Hobby[] arr = new Hobby[4];
+        AbstractHobby[] arr = new AbstractHobby[4];
 
         System.out.print("Input name of your team: ");
-        name = in.nextLine();
+        name = scanner.nextLine();
         System.out.print("Input age: ");
-        age = in.nextInt();
+        age = scanner.nextInt();
         System.out.print("Input: how do you like from 0 to 9 ");
-        interestScale = in.next().trim().charAt(0);
+        interestScale = scanner.next().trim().charAt(0);
         System.out.print("How many goals you scored?: ");
-        goalsScored = in.nextInt();
+        goalsScored = scanner.nextInt();
         System.out.print("How many games you played?: ");
-        gamesPlayed = in.nextInt();
+        gamesPlayed = scanner.nextInt();
 
         arr[0] = new Football(name,age,interestScale,goalsScored,gamesPlayed);
         arr[1] = new Football("School17Team",3,'8',36,52);
 
         System.out.print("Input name of your favourite serial: ");
-        name = in.next();
+        name = scanner.next();
         System.out.print("Input age: ");
-        age = in.nextInt();
+        age = scanner.nextInt();
         System.out.print("Input: how do you like from 0 to 9 ");
-        interestScale = in.next().trim().charAt(0);
+        interestScale = scanner.next().trim().charAt(0);
         System.out.print("What last serial you watched?: ");
-        lastSerial = in.next();
+        lastSerial = scanner.next();
         System.out.print("How many time you spend for serials every day?: ");
-        timeEveryDay = in.nextInt();
+        timeEveryDay = scanner.nextInt();
 
         arr[2] = new Serials(name,age,interestScale,lastSerial,timeEveryDay);
-        arr[3] = new Serials("Supernatural",2,'9',"Shameless",timeEveryDay);
+        arr[3] = new Serials("Supernatural",2,'9',"Shameless",1.7f);
 
-        for (Hobby num:arr) {
+        for (final AbstractHobby num:arr) {
+            try {
                 num.tellAboutHobby();
+            } catch (HobbyExeption hobbyExeption) {
+                System.err.println("Error with this object: " + hobbyExeption.getMessage());
+            }
         }
     }
 }
