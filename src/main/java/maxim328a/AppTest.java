@@ -1,10 +1,13 @@
 package maxim328a;
+import org.apache.log4j.Logger;
+
 import java.util.Scanner;
 
 public class AppTest {
     public static void main (final String[] args ){
 
         final Scanner scanner = new Scanner(System.in);
+        final Logger logger = Logger.getLogger(AppTest.class);
 
         String name;
         String lastSerial;
@@ -48,7 +51,7 @@ public class AppTest {
             try {
                 num.tellAboutHobby();
             } catch (HobbyExeption hobbyExeption) {
-                System.err.println("Error with this object: " + hobbyExeption.getMessage());
+                logger.error("Exeption here: ", hobbyExeption);
             }
         }
     }

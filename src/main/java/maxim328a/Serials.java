@@ -4,8 +4,12 @@
  * Maxim Sitalo
  */
 package maxim328a;
+import org.apache.log4j.*;
+
 
 public class Serials extends AbstractHobby {
+
+    private static final Logger logger = Logger.getLogger(Serials.class);
 
     /**Maxim Sitalo*/
     private String lastSerialWatched;

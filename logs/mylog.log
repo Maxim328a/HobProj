@@ -1,0 +1,4 @@
+2019-11-13 13:56:25 ERROR AppTest:54 - Exeption here: 
+maxim328a.HobbyExeption: Time can not be more than 24 hours
+	at maxim328a.Serials.tellAboutHobby(Serials.java:51)
+	at maxim328a.AppTest.main(AppTest.java:52)
