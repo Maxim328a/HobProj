@@ -53,7 +53,7 @@ public class AppTest {
             } catch (HobbyExeption hobbyExeption) {
                 logger.error("Exeption here: ", hobbyExeption);
             }
-            
+
         }
     }
 }
