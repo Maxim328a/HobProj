@@ -2,3 +2,31 @@
 maxim328a.HobbyExeption: Time can not be more than 24 hours
 	at maxim328a.Serials.tellAboutHobby(Serials.java:51)
 	at maxim328a.AppTest.main(AppTest.java:52)
+2019-11-16 09:25:48 ERROR AppTest:51 - Exeption here: 
+java.io.IOException: Cannot run program "cls": CreateProcess error=2, Не удается найти указанный файл
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at maxim328a.AppTest.runTest(AppTest.java:39)
+	at maxim328a.AppTest.main(AppTest.java:48)
+Caused by: java.io.IOException: CreateProcess error=2, Не удается найти указанный файл
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 5 more
+2019-11-16 09:31:57 ERROR AppTest:51 - Exeption here: 
+java.io.IOException: Cannot run program "cls": CreateProcess error=2, Не удается найти указанный файл
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at maxim328a.AppTest.runTest(AppTest.java:39)
+	at maxim328a.AppTest.main(AppTest.java:48)
+Caused by: java.io.IOException: CreateProcess error=2, Не удается найти указанный файл
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 5 more
